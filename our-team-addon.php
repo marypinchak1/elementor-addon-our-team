@@ -30,10 +30,9 @@ class Our_Team_Elementor_Addon
 
     public function enqueue_styles()
     {
-        // Enqueue additional styles if needed
+        // Add styles
         wp_enqueue_style('our-team-addon-styles', plugins_url('css/styles.css', __FILE__));
     }
 }
 
-// Initialize the plugin
 new Our_Team_Elementor_Addon();

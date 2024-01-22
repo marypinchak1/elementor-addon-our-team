@@ -1,0 +1,41 @@
+.our-team-widget {
+  margin: 20px 0; /* Add margin as needed */
+}
+
+.team-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-member {
+  box-sizing: border-box;
+  flex-basis: calc(33.33% - 20px);
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.team-member img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1.2;
+  object-position: center;
+  border-radius: 14px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .team-member {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .team-member {
+    flex-basis: calc(100% - 20px);
+  }
+}
